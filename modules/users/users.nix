@@ -3,33 +3,33 @@
 
 {
   users.users = {
-    nixuser = {
+    rudra = {
       isNormalUser = true;
-      extraGroups = [ "nixuser" "wheel" "cups" "networkmanager" "scanner" "lp" "libvirtd" "docker" ];
+      extraGroups = [ "rudra" "wheel" "cups" "networkmanager" "scanner" "lp" "libvirtd" "docker" ];
       uid = 1000;  # It's good practice to explicitly set the UID
       initialPassword = "abcde12345";  # Plain text password for testing BE SURE TO CHANGE IT
     };
     # Add Other Users
-    #nixusertwo = {
+    #rudratwo = {
     #  isNormalUser = true;
-    #  extraGroups = [ "nixusertwo" "cups" "networkmanager" ];
+    #  extraGroups = [ "rudratwo" "cups" "networkmanager" ];
     #  uid = 1001;  
     #};
   };
 
   users.groups = {
-    nixuser = {
+    rudra = {
       gid = 1000;
     };
     # You can define other groups here as needed
-    #nixusertwo = {
+    #rudratwo = {
     #  gid = 1001;
     #};
   };
 }
 
 # Manuall set userid and groupid
-#sudo usermod -u 1000 nixuser
-#sudo groupmod -g 1001 nixusertwo
-#sudo usermod -u 1000 nixuser
-#sudo groupmod -g 1001 nixusertwo
+#sudo usermod -u 1000 rudra
+#sudo groupmod -g 1001 rudratwo
+#sudo usermod -u 1000 rudra
+#sudo groupmod -g 1001 rudratwo

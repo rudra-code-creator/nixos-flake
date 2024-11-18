@@ -4,10 +4,10 @@
 search_dir="$HOME/nixos-config"
 
 # Set the fixed search text
-search_text="nixuser"
+search_text="rudra"
 
 # Prompt for the replacement text
-read -p "Enter the text to replace 'nixuser' with: " replace_text
+read -p "Enter the text to replace 'rudra' with: " replace_text
 
 # Function to rename directories
 rename_directories() {
@@ -36,4 +36,4 @@ rename_directories
 # Then, replace text in files
 replace_in_files
 
-echo "Replacement complete. All instances of 'nixuser' have been replaced with '$replace_text' in file contents and directory names."
+echo "Replacement complete. All instances of 'rudra' have been replaced with '$replace_text' in file contents and directory names."

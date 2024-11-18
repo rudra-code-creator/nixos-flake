@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 let
-  username = "nixuser";  # Define the username here for easy changing
+  username = "rudra";  # Define the username here for easy changing
   userHome = config.users.users.${username}.home;
 in
 {

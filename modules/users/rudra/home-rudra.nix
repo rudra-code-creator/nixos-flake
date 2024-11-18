@@ -7,8 +7,8 @@
   ];
 
   # TODO please change the username & home directory to your own
-  home.username = "nixuser";
-  home.homeDirectory = "/home/nixuser";
+  home.username = "rudra";
+  home.homeDirectory = "/home/rudra";
 
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
@@ -28,7 +28,7 @@
   # Set environment variables
   home.sessionVariables = {
     EDITOR = "micro";
-    PATH = "$PATH:/usr/bin:$HOME/.local/bin:$HOME/nixuser-app-repo/";
+    PATH = "$PATH:/usr/bin:$HOME/.local/bin:$HOME/rudra-app-repo/";
   };
 
   # Set cursor size and dpi for 4k monitor

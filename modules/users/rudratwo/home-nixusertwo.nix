@@ -7,8 +7,8 @@
      #...other imports
 ];
 
-  home.username = "nixusertwo";
-  home.homeDirectory = "/home/nixusertwo";
+  home.username = "rudratwo";
+  home.homeDirectory = "/home/rudratwo";
 
 
   # Set environment variables
@@ -23,7 +23,7 @@
    # "Xft.dpi" = 172;
   };
 
-  # Packages for the nixusertwo user
+  # Packages for the rudratwo user
   home.packages = with pkgs; [ 
     
     brave
@@ -36,7 +36,7 @@
   # programs.git = {
   #   enable = true;
   #   userName = "Family User";
-  #   userEmail = "nixusertwo@example.com";
+  #   userEmail = "rudratwo@example.com";
   # };
 
   # This value determines the Home Manager release that your

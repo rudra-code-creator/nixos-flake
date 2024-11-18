@@ -3,9 +3,9 @@
 {
   networking = {
     firewall = {
-       enable = true; # change this to enable and disable
-       allowedTCPPorts = [ 22 445 8384 5000 631 9100 9089 8096 8989 9117 6500 53317 ];
-       allowedUDPPorts = [ 22 445 8384 5000 631 5353 9089 8096 8989 9117 6500 53317 ];
+       enable = false; # change this to enable and disable
+       #allowedTCPPorts = [ 22 445 8384 5000 631 9100 9089 8096 8989 9117 6500 24800 53317 ];
+       #allowedUDPPorts = [ 22 445 8384 5000 631 5353 9089 8096 8989 9117 6500 24800 53317 ];
     };
 
     extraHosts = ''

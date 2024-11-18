@@ -20,6 +20,7 @@
           ../users/users.nix
           ./virtualization.nix
           ./xdomap.nix
+          ./packages.nix
              
       ];
   

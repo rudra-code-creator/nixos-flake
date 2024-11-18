@@ -30,7 +30,7 @@
   ];
 
   # Set up SSH keys for your user
-  users.users.nixuser = {
+  users.users.rudra = {
     openssh.authorizedKeys.keys = [
       "ssh-rsa AAAAB3NzaC1yc2E... machine_a_public_key"
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5... machine_b_public_key"
@@ -41,7 +41,7 @@
   environment.etc."ssh/ssh_config".text = ''
     Host remote
       HostName remote
-      User nixuser
+      User rudra
       Port 22
       ForwardX11 yes
       IdentityFile ~/.ssh/id_ed25519
@@ -55,5 +55,5 @@
 
   # Allow users in the "fuse" group to use FUSE
   users.groups.fuse = {};
-  users.users.nixuser.extraGroups = [ "fuse" ];
+  users.users.rudra.extraGroups = [ "fuse" ];
 }
