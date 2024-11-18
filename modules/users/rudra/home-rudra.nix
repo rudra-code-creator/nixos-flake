@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ../rudra/bashrc.nix
     ../rudra/home-packages.nix
     #...other imports
   ];
