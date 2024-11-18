@@ -29,6 +29,6 @@ fi
 
 # Rebuild NixOS
 echo "Rebuilding NixOS configuration..."
-sudo nixos-rebuild switch --flake $HOME/nixos-config
+sudo nixos-rebuild switch --flake $HOME/nixos-config --impure
 
 echo "NixOS build and update complete!"
