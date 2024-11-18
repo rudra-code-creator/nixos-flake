@@ -2,7 +2,7 @@
 
 {
   imports = [
-    #./bashrc.nix
+    ./bashrc.nix
     #...other imports
   ];
 
@@ -162,8 +162,8 @@ slskd
   
   programs.git = {
     enable = true;
-    userName = "Nixuser";
-    userEmail = "something @something.com";
+    userName = "rudra-code-creator";
+    userEmail = "rudrakeshwani2@gmail.com";
   };
 
   # This value determines the home Manager release that your
