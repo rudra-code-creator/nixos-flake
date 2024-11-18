@@ -104,7 +104,7 @@
 
   };
 
-  programs.bash.initExtra = ''
+  programs.bash.bashrcExtra = ''
     # Chain of sourcing:
     # .xprofile -> .profile -> .bashrc
     # source ~/.bashrc
