@@ -37,6 +37,8 @@
     scrcpy # Screen Record
     tree # directory structure hierarchies 
     #joplin-desktop # Notes
+    bazecor
+    github-desktop
 
     # Self Hosting:
     docker-compose
