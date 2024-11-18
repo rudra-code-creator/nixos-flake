@@ -52,7 +52,7 @@
       apacherestart = "sudo systemctl restart apache2";
 
     };
-    initExtra = ''
+    shellInit = ''
       # Chain of sourcing:
       # .xprofile -> .profile -> .bashrc
       # source ~/.bashrc
