@@ -143,11 +143,11 @@ fcd() { cd "$(find . -type d -not -path '*/.*' | fzf)" && l; }
 f() { echo "$(find . -type f -not -path '*/.*' | fzf)" | pbcopy }
 fv() { nvim "$(find . -type f -not -path '*/.*' | fzf)" }
 
- # Nix
-#  if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
-# 	 . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
-#  fi
- # End Nix
+# Nix
+if [ -e '/nix/var/nix/profiles/system/etc/profiles/per-user/rudra/etc/profile.d/hm-session-vars.sh' ]; then
+	. '/nix/var/nix/profiles/system/etc/profiles/per-user/rudra/etc/profile.d/hm-session-vars.sh'
+fi
+# End Nix
 
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
