@@ -11,6 +11,7 @@
     micro # terminal text editor
     neofetch
     git
+    eza
 
     #zsh
     zsh
