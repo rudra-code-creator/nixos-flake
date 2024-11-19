@@ -79,7 +79,7 @@
   programs.nix-ld.enable = true;
 
   programs.direnv.enable = true;
-  programs.direnv.package = "pkgs.direnv";
+  programs.direnv.package = pkgs.direnv;
   programs.direnv.loadInNixShell = true;
 
   programs.direnv.nix-direnv.enable = true;
