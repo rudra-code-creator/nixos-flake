@@ -27,7 +27,6 @@
   
    # Enable flakes.
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  programs.nushell.enable = true;
   
   # Define your hostname.
   networking.hostName = "nixos"; 

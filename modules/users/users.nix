@@ -2,10 +2,13 @@
 { config, pkgs, ... }:
 
 {
+
+  users.defaultUserShell = pkgs.nushell;
+
   users.users = {
     rudra = {
       isNormalUser = true;
-      shell = pkgs.nushell;
+      useDefaultShell = true;
       extraGroups = [ "rudra" "wheel" "cups" "networkmanager" "scanner" "lp" "libvirtd" "docker" ];
       uid = 1000;  # It's good practice to explicitly set the UID
       initialPassword = "abcde12345";  # Plain text password for testing BE SURE TO CHANGE IT
