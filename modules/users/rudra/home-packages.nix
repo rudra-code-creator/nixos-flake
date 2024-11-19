@@ -50,6 +50,7 @@
     neovim
     #neovim-unwrapped
     vscodium # Text Editor
+    zoxide
 
     # Editing:
     audacity
