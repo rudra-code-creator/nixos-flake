@@ -148,6 +148,7 @@ if [ -e '/nix/var/nix/profiles/system/etc/profiles/per-user/rudra/etc/profile.d/
 	. '/nix/var/nix/profiles/system/etc/profiles/per-user/rudra/etc/profile.d/hm-session-vars.sh'
 fi
 # End Nix
+#dcjajfkdk
 
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
