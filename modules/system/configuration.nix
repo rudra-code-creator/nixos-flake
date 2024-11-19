@@ -83,7 +83,7 @@
   programs.direnv.loadInNixShell = true;
 
   programs.direnv.nix-direnv.enable = true;
-  programs.direnv.nix-direnv.package = "pkgs.nix-direnv";
+  programs.direnv.nix-direnv.package = pkgs.nix-direnv;
 
   # Set your time zone.
   time.timeZone = "America/New_York";
