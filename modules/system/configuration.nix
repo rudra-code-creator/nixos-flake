@@ -78,6 +78,13 @@
   # Enable bin files to run
   programs.nix-ld.enable = true;
 
+  programs.direnv.enable = true;
+  programs.direnv.package = "pkgs.direnv";
+  programs.direnv.loadInNixShell = true;
+
+  programs.direnv.nix-direnv.enable = true;
+  programs.direnv.nix-direnv.package = "pkgs.nix-direnv";
+
   # Set your time zone.
   time.timeZone = "America/New_York";
 
