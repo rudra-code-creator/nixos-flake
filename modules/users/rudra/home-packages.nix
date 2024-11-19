@@ -54,6 +54,7 @@
     #shell
     zoxide
     carapace
+    atuin
 
     # Editing:
     audacity
