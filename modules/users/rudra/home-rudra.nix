@@ -42,7 +42,7 @@
   programs.bat = {
     enable = true;
     config = {
-      theme = "Catppuccin";
+      theme = "Github";
       italic-text = "always";
     };    
   };
