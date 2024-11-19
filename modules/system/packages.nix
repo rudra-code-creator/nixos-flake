@@ -9,6 +9,8 @@
     rofi # app launcher
     dmenu # launcher
     micro # terminal text editor
+    neofetch
+    git
 
     #zsh
     zsh
