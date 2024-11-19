@@ -13,6 +13,21 @@
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
 
+  # Home Manager is pretty good at managing dotfiles. The primary way to manage
+  # plain files is through 'home.file'.
+  home.file = {
+    ".zshrc".source = ./dotfiles/zshrc/.zshrc;
+    ".config/wezterm".source = ./dotfiles/wezterm;
+    ".config/skhd".source = ./dotfiles/skhd;
+    ".config/starship".source = ./dotfiles/starship;
+    ".config/zellij".source = ./dotfiles/zellij;
+    ".config/nvim".source = ./dotfiles/nvim;
+    # ".config/nix".source = ./dotfiles/nix;
+    # ".config/nix-darwin".source = ./dotfiles/nix-darwin;
+    ".config/tmux".source = ./dotfiles/tmux;
+    ".config/ghostty".source = ./dotfiles/ghostty;
+  };
+
   # link all files in `./scripts` to `~/.config/i3/scripts`
   # home.file.".config/i3/scripts" = {
   #   source = ./scripts;
