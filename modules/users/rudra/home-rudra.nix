@@ -42,7 +42,7 @@
   programs.bat = {
     enable = true;
     config = {
-      theme = "GitHub";
+      theme = "Gruvbox";
       italic-text = "always";
     };    
   };
