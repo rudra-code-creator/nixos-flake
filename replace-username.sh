@@ -12,6 +12,7 @@ read -p "Enter the text to replace 'rudra' with: " replace_text
 # Function to rename directories
 rename_directories() {
     find "$search_dir" -depth -type d -name "*$search_text*" | while read dir; do
+        # shellcheck disable=SC2001
         newdir=$(echo "$dir" | sed "s/$search_text/$replace_text/g")
         if [ "$dir" != "$newdir" ]; then
             mv "$dir" "$newdir"

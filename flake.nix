@@ -18,10 +18,6 @@
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 
-        users.users.rudra = {
-          shell = environment.systemPackages.nushell;
-        };
-
         modules = [
           # Window Managers & Desktop Environments
           ./modules/desktop/wm/x11/i3.nix
