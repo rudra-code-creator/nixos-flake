@@ -19,7 +19,7 @@
         system = "x86_64-linux";
 
         users.users.rudra = {
-          shell = pkgs.nushell;
+          shell = environment.systemPackages.nushell;
         };
 
         modules = [
