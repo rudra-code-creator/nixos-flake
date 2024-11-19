@@ -22,6 +22,7 @@
     ".config/starship".source = ./dotfiles-rudra/starship;
     ".config/zellij".source = ./dotfiles-rudra/zellij;
     ".config/nvim".source = ./dotfiles-rudra/nvim;
+    ".config/nushell".source = ./dotfiles-rudra/nushell;
     # ".config/nix".source = ./dotfiles-rudra/nix;
     # ".config/nix-darwin".source = ./dotfiles-rudra/nix-darwin;
     ".config/tmux".source = ./dotfiles-rudra/tmux;
