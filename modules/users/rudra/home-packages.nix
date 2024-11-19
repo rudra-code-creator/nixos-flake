@@ -55,7 +55,7 @@
     zoxide
     carapace
     atuin
-    nushell
+    #nushell
 
     # Editing:
     audacity

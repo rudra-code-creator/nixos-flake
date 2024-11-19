@@ -10,6 +10,12 @@
     dmenu # launcher
     micro # terminal text editor
 
+    #zsh
+    zsh
+    zsh-z
+    zsh-bd
+    zsh-edit
+
     # File Manager:
     xfce.thunar
     xfce.thunar-archive-plugin
