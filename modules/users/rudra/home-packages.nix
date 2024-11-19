@@ -55,6 +55,7 @@
     zoxide
     carapace
     atuin
+    nushellFull
 
     # Editing:
     audacity
