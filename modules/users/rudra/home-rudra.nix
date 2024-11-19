@@ -13,19 +13,19 @@
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
 
-  # Home Manager is pretty good at managing dotfiles. The primary way to manage
+  # Home Manager is pretty good at managing dotfiles-rudra. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
-    ".zshrc".source = ./dotfiles/zshrc/.zshrc;
-    ".config/wezterm".source = ./dotfiles/wezterm;
-    ".config/skhd".source = ./dotfiles/skhd;
-    ".config/starship".source = ./dotfiles/starship;
-    ".config/zellij".source = ./dotfiles/zellij;
-    ".config/nvim".source = ./dotfiles/nvim;
-    # ".config/nix".source = ./dotfiles/nix;
-    # ".config/nix-darwin".source = ./dotfiles/nix-darwin;
-    ".config/tmux".source = ./dotfiles/tmux;
-    ".config/ghostty".source = ./dotfiles/ghostty;
+    ".zshrc".source = ./dotfiles-rudra/zshrc/.zshrc;
+    ".config/wezterm".source = ./dotfiles-rudra/wezterm;
+    ".config/skhd".source = ./dotfiles-rudra/skhd;
+    ".config/starship".source = ./dotfiles-rudra/starship;
+    ".config/zellij".source = ./dotfiles-rudra/zellij;
+    ".config/nvim".source = ./dotfiles-rudra/nvim;
+    # ".config/nix".source = ./dotfiles-rudra/nix;
+    # ".config/nix-darwin".source = ./dotfiles-rudra/nix-darwin;
+    ".config/tmux".source = ./dotfiles-rudra/tmux;
+    ".config/ghostty".source = ./dotfiles-rudra/ghostty;
   };
 
   # link all files in `./scripts` to `~/.config/i3/scripts`
