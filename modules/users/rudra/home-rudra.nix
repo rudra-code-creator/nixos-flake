@@ -24,8 +24,9 @@
     ".config/zellij".source = ./dotfiles-rudra/zellij;
     ".config/nvim".source = ./dotfiles-rudra/nvim;
 
-    ".config/nushell".source = ./dotfiles-rudra/nushell;
-    ".config/nushell".recursive = true;
+    ".config/nushell/config.nu".source = ./dotfiles-rudra/nushell/config.nu;
+    ".config/nushell/env.nu".source = ./dotfiles-rudra/nushell/env.nu;
+    # ".config/nushell".recursive = true;
 
     # ".config/nix".source = ./dotfiles-rudra/nix;
     # ".config/nix-darwin".source = ./dotfiles-rudra/nix-darwin;
