@@ -4,6 +4,8 @@
   environment.systemPackages = with pkgs; [
     # Basics:
     alacritty # terminal
+    kitty
+    wezterm
     chromium # browser
     xed-editor # text editor
     rofi # app launcher
@@ -12,6 +14,7 @@
     neofetch
     git
     eza
+    sl
 
     fish
     nushell
