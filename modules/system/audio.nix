@@ -2,7 +2,6 @@
 
 {
   # Enable sound with pipewire
-  sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -14,6 +13,10 @@
     jack.enable = true;
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
-    media-session.enable = true;
+    # media-session.enable = true;
   };
+
+  services.pipewire.wireplumber.enable = true;
+
 }
+
