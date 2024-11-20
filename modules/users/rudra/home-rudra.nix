@@ -3,7 +3,7 @@
 {
   imports = [
     ../rudra/home-packages.nix
-    # ../rudra/nushell.nix
+    ../rudra/nushell.nix
   ];
 
   # TODO please change the username & home directory to your own
