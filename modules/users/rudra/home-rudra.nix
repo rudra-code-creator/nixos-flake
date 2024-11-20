@@ -3,6 +3,7 @@
 {
   imports = [
     ../rudra/home-packages.nix
+    #../rudra/nushell.nix
   ];
 
   # TODO please change the username & home directory to your own
@@ -23,8 +24,8 @@
     ".config/zellij".source = ./dotfiles-rudra/zellij;
     ".config/nvim".source = ./dotfiles-rudra/nvim;
 
-    ".config/nushell/config.nu".source = ./dotfiles-rudra/nushell/config.nu;
-    ".config/nushell/env.nu".source = ./dotfiles-rudra/nushell/env.nu;
+    # ".config/nushell/config.nu".source = ./dotfiles-rudra/nushell/config.nu;
+    # ".config/nushell/env.nu".source = ./dotfiles-rudra/nushell/env.nu;
 
     # ".config/nix".source = ./dotfiles-rudra/nix;
     # ".config/nix-darwin".source = ./dotfiles-rudra/nix-darwin;
@@ -86,7 +87,7 @@
   programs.bash.enable = true;
   programs.zsh.enable = true;
   programs.fish.enable = true;
-  programs.nushell.enable = false;
+  programs.nushell.enable = true;
 
   programs.carapace.enable = true;
   programs.carapace.enableBashIntegration = true;
