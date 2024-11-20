@@ -937,14 +937,17 @@ alias kc = kubectx
 alias kns = kubens
 alias kl = kubectl logs -f
 alias ke = kubectl exec -it
+
+alias flake-build = bash ~/nixos-config/modules/scripts/flake-build.sh
+alias flake-pull = bash ~/nixos-config/modules/scripts/flake-pull.sh
+alias flake-push = bash ~/nixos-config/modules/scripts/flake-push.sh
+alias flake-update = bash ~/nixos-config/modules/scripts/flake-update.sh
 '';
 
 programs.nushell.envFile.text = ''
 # Nushell Environment Config File
 #
 # version = "0.95.0"
-
-
 
 # # The prompt indicators are environmental variables that represent
 # # the state of the prompt

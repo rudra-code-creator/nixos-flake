@@ -89,18 +89,64 @@
   programs.fish.enable = true;
   programs.nushell.enable = true;
 
-  programs.carapace.enable = true;
-  programs.carapace.enableBashIntegration = true;
-  programs.carapace.enableZshIntegration = true;
-  programs.carapace.enableFishIntegration = true;
-  programs.carapace.enableNushellIntegration = true;
+  programs.carapace = {
+    enable = true;
+    enableBashIntegration = true;
+    enableZshIntegration = true;
+    enableFishIntegration = true;
+    enableNushellIntegration = true;
+  };
 
-  programs.starship.enable = true;
-  programs.starship.enableBashIntegration = true;
-  programs.starship.enableZshIntegration = true;
-  programs.starship.enableFishIntegration = true;
-  programs.starship.enableNushellIntegration = true;
-  programs.starship.enableIonIntegration = true;
+  programs.starship = {
+    enable = true;
+    enableBashIntegration = true;
+    enableZshIntegration = true;
+    enableFishIntegration = true;
+    enableNushellIntegration = true;
+    enableIonIntegration = true;
+  };
+
+  programs.atuin = {
+    enable = true;
+    enableBashIntegration = true;
+    enableZshIntegration = true;
+    enableFishIntegration = true;
+    enableNushellIntegration = true;
+  };
+
+  programs.broot = {
+    enable = true;
+    enableBashIntegration = true;
+    enableZshIntegration = true;
+    enableFishIntegration = true;
+    enableNushellIntegration = true;
+  };
+
+  programs.direnv = {
+    enable = true;
+    enableBashIntegration = true;
+    enableZshIntegration = true;
+    enableFishIntegration = true;
+    enableNushellIntegration = true;
+    nix-direnv.enable = true;
+  };
+
+  programs.eza = {
+    enable = true;
+    enableBashIntegration = true;
+    enableZshIntegration = true;
+    enableFishIntegration = true;
+    enableNushellIntegration = true;
+    enableIonIntegration = true;
+    extraOptions = [
+      "--group-directories-first"
+      "--header"
+    ]
+  };
+
+
+
+
 
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
