@@ -48,7 +48,12 @@
     # PATH = "$PATH:/usr/bin:$HOME/.local/bin:$HOME/rudra-app-repo/";
   };
 
-  home.sessionPath = ["$PATH:/usr/bin:$HOME/.local/bin:$HOME/rudra-app-repo/"];
+  home.sessionPath = [
+    # no need for a bare $PATH item; these are all appended to any base
+    # PATH you already have
+    "$HOME/.local/bin"
+    "$HOME/rudra-app-repo"
+  ];
 
   # Set cursor size and dpi for 4k monitor
   xresources.properties = {
