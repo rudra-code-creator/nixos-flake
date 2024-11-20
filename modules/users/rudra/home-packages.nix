@@ -26,6 +26,7 @@
     # Basics
     terminator # Konsole
     bitwarden # PW Manager
+    wezterm
 
     # Productivity:
     autokey
