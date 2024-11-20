@@ -35,5 +35,9 @@
     wtype
     wl-clipboard
     wpaperd
+
+    (pkgs.waybar.overrideAttrs (oldAttrs: {
+      mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
+    }))
   ];
 }
