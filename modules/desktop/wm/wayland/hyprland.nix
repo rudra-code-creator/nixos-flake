@@ -38,6 +38,7 @@
     dunst
     libnotify
     swww
+    networkmanagerapplet
 
     (pkgs.waybar.overrideAttrs (oldAttrs: {
       mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
