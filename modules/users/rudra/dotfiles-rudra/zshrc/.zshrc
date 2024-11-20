@@ -144,9 +144,9 @@ f() { echo "$(find . -type f -not -path '*/.*' | fzf)" | pbcopy }
 fv() { nvim "$(find . -type f -not -path '*/.*' | fzf)" }
 
 # Nix
-if [ -e '/nix/var/nix/profiles/system/etc/profiles/per-user/rudra/etc/profile.d/hm-session-vars.sh' ]; then
-	. '/nix/var/nix/profiles/system/etc/profiles/per-user/rudra/etc/profile.d/hm-session-vars.sh'
-fi
+# if [ -e '/nix/var/nix/profiles/system/etc/profiles/per-user/rudra/etc/profile.d/hm-session-vars.sh' ]; then
+#	. '/nix/var/nix/profiles/system/etc/profiles/per-user/rudra/etc/profile.d/hm-session-vars.sh'
+# fi
 # End Nix
 #dcjajfkdk
 

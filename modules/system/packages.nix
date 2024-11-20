@@ -13,6 +13,9 @@
     git
     eza
 
+    fish
+    nushell
+
     #zsh
     zsh
     zsh-z
