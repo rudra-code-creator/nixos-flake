@@ -3,7 +3,6 @@
 {
   imports = [
     ../rudra/home-packages.nix
-    #...other imports
   ];
 
   # TODO please change the username & home directory to your own
@@ -87,7 +86,7 @@
   programs.bash.enable = true;
   programs.zsh.enable = true;
   programs.fish.enable = true;
-  # programs.nushell.enable = false;
+  programs.nushell.enable = false;
 
   programs.carapace.enable = true;
   programs.carapace.enableBashIntegration = true;

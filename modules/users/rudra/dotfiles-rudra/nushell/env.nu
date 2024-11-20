@@ -34,8 +34,8 @@
 #     ([$last_exit_code, (char space), $time_segment] | str join)
 # }
 
-# # Use nushell functions to define your right and left prompt
-# $env.PROMPT_COMMAND = {|| create_left_prompt }
+# Use nushell functions to define your right and left prompt
+$env.PROMPT_COMMAND = { starship init nu | save -f ~/.cache/starship/init.nu }
 # # FIXME: This default is not implemented in rust code as of 2023-09-08.
 # $env.PROMPT_COMMAND_RIGHT = {|| create_right_prompt }
 
