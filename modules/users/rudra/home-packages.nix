@@ -10,8 +10,10 @@
     # Web Browsers:
     brave
     firefox
-    #microsoft-edge
+    microsoft-edge
     opera
+    vivaldi
+
 
     # File Managers & Addons:
     xfce.catfish
@@ -25,6 +27,7 @@
 
     # Basics
     terminator # Konsole
+    warp-terminal
     bitwarden # PW Manager
     wezterm
 
