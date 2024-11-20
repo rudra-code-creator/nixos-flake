@@ -84,8 +84,8 @@
   programs.zsh.enable = true;
   programs.fish.enable = true;
   programs.nushell.enable = true;
-  programs.carapace.enable = true;
 
+  programs.carapace.enable = true;
   programs.carapace.enableBashIntegration = true;
   programs.carapace.enableZshIntegration = true;
   programs.carapace.enableFishIntegration = true;
