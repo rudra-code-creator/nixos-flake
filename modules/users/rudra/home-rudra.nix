@@ -9,7 +9,7 @@
   # TODO please change the username & home directory to your own
   home.username = "rudra";
   home.homeDirectory = "/home/rudra";
-  home-manager.backupFileExtension = "backup";
+  
 
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
