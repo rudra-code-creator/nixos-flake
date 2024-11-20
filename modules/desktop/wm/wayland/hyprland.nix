@@ -39,6 +39,7 @@
     libnotify
     swww
     networkmanagerapplet
+    wofi
 
     (pkgs.waybar.overrideAttrs (oldAttrs: {
       mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
