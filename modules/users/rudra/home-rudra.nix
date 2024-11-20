@@ -44,8 +44,10 @@
   # Set environment variables
   home.sessionVariables = {
     EDITOR = "micro";
-    PATH = "$PATH:/usr/bin:$HOME/.local/bin:$HOME/rudra-app-repo/";
+    # PATH = "$PATH:/usr/bin:$HOME/.local/bin:$HOME/rudra-app-repo/";
   };
+
+  home.sessionPath = ["$PATH:/usr/bin:$HOME/.local/bin:$HOME/rudra-app-repo/"];
 
   # Set cursor size and dpi for 4k monitor
   xresources.properties = {
