@@ -14,7 +14,7 @@
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
 
-  # Home Manager is pretty good at managing dotfiles-rudra. The primary way to manage
+  # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
     ".zshrc".source = ./dotfiles-rudra/zshrc/.zshrc;
@@ -26,7 +26,6 @@
 
     ".config/nushell/config.nu".source = ./dotfiles-rudra/nushell/config.nu;
     ".config/nushell/env.nu".source = ./dotfiles-rudra/nushell/env.nu;
-    # ".config/nushell".recursive = true;
 
     # ".config/nix".source = ./dotfiles-rudra/nix;
     # ".config/nix-darwin".source = ./dotfiles-rudra/nix-darwin;
@@ -88,7 +87,7 @@
   programs.bash.enable = true;
   programs.zsh.enable = true;
   programs.fish.enable = true;
-  programs.nushell.enable = false;
+  # programs.nushell.enable = false;
 
   programs.carapace.enable = true;
   programs.carapace.enableBashIntegration = true;
@@ -96,6 +95,12 @@
   programs.carapace.enableFishIntegration = true;
   programs.carapace.enableNushellIntegration = true;
 
+  programs.starship.enable = true;
+  programs.starship.enableBashIntegration = true;
+  programs.starship.enableZshIntegration = true;
+  programs.starship.enableFishIntegration = true;
+  programs.starship.enableNushellIntegration = true;
+  programs.starship.enableIonIntegration = true;
 
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
