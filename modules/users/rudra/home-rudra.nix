@@ -130,7 +130,6 @@
     enableNushellIntegration = true;
     nix-direnv.enable = true;
 
-    loadInNixShell = true;
     package = pkgs.direnv;
     nix-direnv.package = pkgs.nix-direnv;
   };
