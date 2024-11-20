@@ -51,6 +51,9 @@
   home.sessionPath = [
     # no need for a bare $PATH item; these are all appended to any base
     # PATH you already have
+    # and /usr/bin isn't a thing on NixOS (all it should ever contain is
+    # `env`, as a concession to shell scripts that haven't been fixup-ed
+    # by a Nix derivation)
     "$HOME/.local/bin"
     "$HOME/rudra-app-repo"
   ];
