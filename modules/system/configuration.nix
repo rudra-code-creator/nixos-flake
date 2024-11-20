@@ -100,6 +100,17 @@
     PATH = ["${pkgs.pyload-ng}/bin"];
   };
 
+  services.gpg-agent = {
+    enable = true;
+    enableBashIntegration = true;
+    enableZshIntegration = true;
+    enableFishIntegration = true;
+    enableNushellIntegration = true;
+    enableExtraSocket = true;
+    enableScDaemon = true;
+
+  };
+
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";

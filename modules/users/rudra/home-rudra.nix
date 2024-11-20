@@ -126,7 +126,7 @@
     enable = true;
     enableBashIntegration = true;
     enableZshIntegration = true;
-    # enableFishIntegration = true;
+    # enableFishIntegration = true; #NIX COMPILER DOES NOOT LIKE FOR SOME REASON
     enableNushellIntegration = true;
     nix-direnv.enable = true;
 
@@ -145,6 +145,41 @@
       "--group-directories-first"
       "--header"
     ];
+  };
+
+  #TODO: Investigate keychain. looks like interesting tool
+  programs.keychain = {
+    enable = true;
+    enableBashIntegration = true;
+    enableZshIntegration = true;
+    enableFishIntegration = true;
+    enableNushellIntegration = true;
+    enableXsessionIntegration = true;
+
+  };
+
+  programs.thefuck = {
+    enable = true;
+    enableBashIntegration = true;
+    enableZshIntegration = true;
+    enableFishIntegration = true;
+    enableNushellIntegration = true;
+  };
+
+  programs.yazi = {
+    enable = true;
+    enableBashIntegration = true;
+    enableZshIntegration = true;
+    enableFishIntegration = true;
+    enableNushellIntegration = true;
+  };
+
+  programs.zoxide = {
+    enable = true;
+    enableBashIntegration = true;
+    enableZshIntegration = true;
+    enableFishIntegration = true;
+    enableNushellIntegration = true;
   };
 
 
