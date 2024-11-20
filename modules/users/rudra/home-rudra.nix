@@ -182,9 +182,15 @@
     enableNushellIntegration = true;
   };
 
-
-
-
+  services.gpg-agent = {
+    enable = true;
+    enableBashIntegration = true;
+    enableZshIntegration = true;
+    enableFishIntegration = true;
+    enableNushellIntegration = true;
+    enableExtraSocket = true;
+    enableScDaemon = true;
+  };
 
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
