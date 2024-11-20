@@ -1,5 +1,10 @@
 # Path to your oh-my-zsh installation.
 # Reevaluate the prompt string each time it's displaying a prompt
+
+ #include .profile if it exists                                                                                                                                                                                                         
+[[ -f ~/.profile ]] && . ~/.profile
+
+
 setopt prompt_subst
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 autoload bashcompinit && bashcompinit
