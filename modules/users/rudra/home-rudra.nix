@@ -84,6 +84,13 @@
   programs.zsh.enable = true;
   programs.fish.enable = true;
   programs.nushell.enable = true;
+  programs.carapace.enable = true;
+
+  programs.carapace.enableBashIntegration = true;
+  programs.carapace.enableZshIntegration = true;
+  programs.carapace.enableFishIntegration = true;
+  programs.carapace.enableNushellIntegration = true;
+
 
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
