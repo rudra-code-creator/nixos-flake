@@ -17,6 +17,7 @@
     xfce.catfish
     mate.caja-with-extensions
     ranger
+    fzf
 
     # Music:
     clementine
