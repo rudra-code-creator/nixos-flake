@@ -1,7 +1,7 @@
 # New module for SYSTEM-WIDE packages and allowUnfree
 { config, pkgs, ... }: {
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.allowUnsupportedSystem = true;
+  # nixpkgs.config.allowUnsupportedSystem = true;
   environment.systemPackages = with pkgs; [
     # Basics:
     alacritty # terminal
@@ -17,6 +17,7 @@
     eza
     sl
     waynergy
+    gnome-extension-manager
 
     fish
     nushell
