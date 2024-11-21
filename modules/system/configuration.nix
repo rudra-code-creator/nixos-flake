@@ -32,6 +32,7 @@
     enable = true;
   };
 
+  #which GLIB schema to use
   environment.sessionVariables.NIX_GSETTINGS_OVERRIDES_DIR = lib.mkForce "/nix/store/i7mq1ykcci39lw3k7mrxca062rwapk0f-gnome-gsettings-overrides/share/gsettings-schemas/nixos-gsettings-overrides/glib-2.0/schemas";
   
   # Define your hostname.
