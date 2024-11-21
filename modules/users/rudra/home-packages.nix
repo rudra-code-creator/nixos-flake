@@ -30,6 +30,7 @@
     warp-terminal
     bitwarden # PW Manager
     wezterm
+    tmux
 
     # Productivity:
     autokey
