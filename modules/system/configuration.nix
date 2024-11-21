@@ -23,7 +23,7 @@
 
           #PACKAGES
           ./Packages/packages.nix
-          ./Packages/gnome-extensions.nix
+          # ./Packages/gnome-extensions.nix
              
       ];
   
