@@ -23,8 +23,8 @@
           ./modules/desktop/wm/x11/i3.nix
           ./modules/desktop/wm/wayland/hyprland.nix
           #./modules/desktop/wm/x11/dwm/dwm.nix
-          #./modules/desktop/de/wayland/gnome.nix
-          ./modules/desktop/de/x11/cinnamon.nix
+          ./modules/desktop/de/gnome.nix
+          ./modules/desktop/de/cinnamon.nix
 
           # Configs
           ./modules/system/configuration.nix

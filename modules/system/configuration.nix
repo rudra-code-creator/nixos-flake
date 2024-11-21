@@ -27,6 +27,10 @@
   
    # Enable flakes.
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  services.xserver = {
+    enable = true;
+  };
   
   # Define your hostname.
   networking.hostName = "nixos"; 
