@@ -1,6 +1,7 @@
 # New module for SYSTEM-WIDE packages and allowUnfree
 { config, pkgs, ... }: {
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowUnsupportedSystem = true;
   environment.systemPackages = with pkgs; [
     # Basics:
     alacritty # terminal
@@ -15,6 +16,7 @@
     git
     eza
     sl
+    waynergy
 
     fish
     nushell

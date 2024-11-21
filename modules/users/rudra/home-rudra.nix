@@ -4,6 +4,7 @@
   imports = [
     ../rudra/home-packages.nix
     ../rudra/nushell.nix
+    # ../rudra/theming.nix
   ];
 
   # TODO please change the username & home directory to your own
@@ -18,8 +19,7 @@
   # plain files is through 'home.file'.
   home.file = {
     ".zshrc".source = ./dotfiles-rudra/zshrc/.zshrc;
-    ".config/wezterm".source = ./dotfiles-rudra/wezterm;
-    ".config/skhd".source = ./dotfiles-rudra/skhd;
+    # ".config/wezterm".source = ./dotfiles-rudra/wezterm;
     ".config/starship".source = ./dotfiles-rudra/starship;
     ".config/zellij".source = ./dotfiles-rudra/zellij;
     ".config/nvim".source = ./dotfiles-rudra/nvim;

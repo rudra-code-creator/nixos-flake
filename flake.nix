@@ -37,7 +37,7 @@
             home-manager.useUserPackages = true;
             home-manager.backupFileExtension = "backup";
             home-manager.users = {
-                          rudra = import /home/rudra/nixos-config/modules/users/rudra/home-rudra.nix;
+                          rudra = import ./modules/users/rudra/home-rudra.nix;
                           #rudratwo = import ./modules/users/rudratwo/home-rudratwo.nix;
                         };
           }

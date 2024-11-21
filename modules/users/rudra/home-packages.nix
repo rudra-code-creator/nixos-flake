@@ -33,17 +33,17 @@
 
     # Productivity:
     autokey
-    colorpicker # waylad
     flameshot
     fsearch
     gpick # Colorpicker x11
+    eyedropper
     piper-tts
-    normcap # OCR
     scrcpy # Screen Record
     tree # directory structure hierarchies 
     #joplin-desktop # Notes
     bazecor
     github-desktop
+    waynergy
 
     # Self Hosting:
     docker-compose
@@ -73,7 +73,7 @@
 
     # TUI:
     bottom
-    cava
+    # cava
     cmatrix
     fastfetch
     figlet #ASVII Generator
