@@ -19,6 +19,7 @@
         blur-my-shell.extensionUuid
         gsconnect.extensionUuid
         workspaces-indicator-by-open-apps.extensionUuid
+        dash-to-dock.extensionUuid
       ];
     };
   };
