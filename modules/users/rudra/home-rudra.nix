@@ -10,6 +10,17 @@
   # TODO please change the username & home directory to your own
   home.username = "rudra";
   home.homeDirectory = "/home/rudra";
+
+  dconf = {
+    enable = true;
+    settings."org/gnome/shell" = {
+      disable-user-extensions = false;
+      enabled-extensions = with pkgs.gnomeExtensions; [
+        blur-my-shell.extensionUuid
+        gsconnect.extensionUuid
+      ];
+    };
+  };
   
 
   # link the configuration file in current directory to the specified location in home directory

@@ -3,7 +3,7 @@
 
 {
 
-  users.defaultUserShell = pkgs.bash;
+  users.defaultUserShell = pkgs.nushell;
 
   users.users = {
     rudra = {
