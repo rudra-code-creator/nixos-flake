@@ -6,23 +6,11 @@
     ../rudra/nushell.nix
     # ../rudra/theming.nix
 
-    inputs.catppuccin.homeManagerModules.catppuccin
   ];
 
   # TODO please change the username & home directory to your own
   home.username = "rudra";
   home.homeDirectory = "/home/rudra";
-
-  gtk = {
-    enable = true;
-    catppuccin = {
-      enable = true;
-      flavor = "mocha";
-      accent = "pink";
-      size = "standard";
-      tweaks = [ "normal" ];
-    };
-  };
 
   dconf = {
     enable = true;
