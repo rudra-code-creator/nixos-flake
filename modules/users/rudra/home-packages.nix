@@ -31,6 +31,7 @@
     bitwarden # PW Manager
     wezterm
     tmux
+    zellij
 
     # Productivity:
     autokey
