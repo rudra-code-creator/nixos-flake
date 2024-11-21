@@ -18,6 +18,7 @@
       enabled-extensions = with pkgs.gnomeExtensions; [
         blur-my-shell.extensionUuid
         gsconnect.extensionUuid
+        workspaces-indicator-by-open-apps.extensionUuid
       ];
     };
   };
