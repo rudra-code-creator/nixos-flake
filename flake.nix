@@ -17,13 +17,9 @@
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 
-        # Enable flakes.
-        nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-        #for nixD
-        nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
-
         modules = [
+
+          ./nix.nix
           # Window Managers & Desktop Environments
           ./modules/desktop/wm/x11/i3.nix
           ./modules/desktop/wm/wayland/hyprland.nix
