@@ -1,5 +1,5 @@
 {
-  # config,
+  config,
   pkgs,
   # inputs,
   ...
@@ -79,27 +79,38 @@
   qt.style.name = "adwaita-dark";
   qt.style.package = pkgs.adwaita-qt;
 
+  gtk = {
+    enable = true;
 
+    cursorTheme.name = "Bibata-Modern-Ice";
+    cursorTheme.package = pkgs.bibata-cursors;
 
-  gtk.enable = true;
-
-  gtk.cursorTheme.name = "Bibata-Modern-Ice";
-  gtk.cursorTheme.package = pkgs.bibata-cursors;
-
+    theme = {
+      name = "Catppuccin-Macchiato-Compact-Pink-Dark";
+      package = pkgs.catppuccin-gtk.override {
+        accents = [ "pink" ];
+        size = "compact";
+        tweaks = [ "rimless" "black" ];
+        variant = "macchiato";
+      };
+    };
+  };
   # gtk.theme.name = "adw-gtk3";
   # gtk.theme.package = pkgs.adw-gtk3;
 
   # gtk.iconTheme.name = "GruvboxPlus";
   # gtk.iconTheme.package = gruvboxPlus;
 
-
-
+  # Now symlink the `~/.config/gtk-4.0/` folder declaratively:
+  xdg.configFile = {
+    "gtk-4.0/assets".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/assets";
+    "gtk-4.0/gtk.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk.css";
+    "gtk-4.0/gtk-dark.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk-dark.css";
+  };
 
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
 
-  # Home Manager is pretty good at managing dotfiles. The primary way to manage
-  # plain files is through 'home.file'.
   home.file = {
 
     ".icons/bibata".source = "${pkgs.bibata-cursors}/share/icons/Bibata-Modern-Classic";
