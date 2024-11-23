@@ -19,6 +19,13 @@
     waynergy
     gnome-extension-manager
 
+    # NIX CODE FORMATTERS
+    nixfmt-rfc-style # my favourite - new official style for nixpkgs
+    nixpkgs-fmt # ugly AF but current official style for nixpkgs
+    alejandra # fast and reliable, readable style
+
+    nixd #NIX LSP
+
     fish
     nushell
 

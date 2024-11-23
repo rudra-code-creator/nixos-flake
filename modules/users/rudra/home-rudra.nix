@@ -18,6 +18,7 @@
     settings."org/gnome/shell" = {
       disable-user-extensions = false;
       enabled-extensions = with pkgs.gnomeExtensions; [
+        add-username-to-top-panel.extensionUuid
         blur-my-shell.extensionUuid
         gsconnect.extensionUuid
         workspaces-indicator-by-open-apps.extensionUuid
