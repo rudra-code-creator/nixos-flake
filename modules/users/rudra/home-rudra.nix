@@ -71,8 +71,29 @@
     settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
   };
 
-  gtk.enable = true;
+
+
   qt.enable = true;
+  qt.platformTheme = "gtk";
+
+  qt.style.name = "adwaita-dark";
+  qt.style.package = pkgs.adwaita-qt;
+
+
+
+  gtk.enable = true;
+
+  gtk.cursorTheme.name = "Bibata-Modern-Ice";
+  gtk.cursorTheme.package = pkgs.bibata-cursors;
+
+  # gtk.theme.name = "adw-gtk3";
+  # gtk.theme.package = pkgs.adw-gtk3;
+
+  # gtk.iconTheme.name = "GruvboxPlus";
+  # gtk.iconTheme.package = gruvboxPlus;
+
+
+
 
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
@@ -80,6 +101,9 @@
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
+
+    ".icons/bibata".source = "${pkgs.bibata-cursors}/share/icons/Bibata-Modern-Classic";
+
     ".zshrc".source = ./dotfiles-rudra/zshrc/.zshrc;
     # ".config/wezterm".source = ./dotfiles-rudra/wezterm;
     ".config/starship".source = ./dotfiles-rudra/starship;

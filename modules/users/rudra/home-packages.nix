@@ -12,6 +12,10 @@
     # Testing
     kmonad # keybaord
 
+    sassc
+    murrine-engine
+    gnome-themes-extra
+
     # Web Browsers:
     brave
     firefox
