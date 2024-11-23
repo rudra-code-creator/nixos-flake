@@ -23,11 +23,48 @@
     settings."org/gnome/shell" = {
       disable-user-extensions = false;
       enabled-extensions = with pkgs.gnomeExtensions; [
+
         add-username-to-top-panel.extensionUuid
+        alphabetical-app-grid.extensionUuid
+        appindicator.extensionUuid
+        auto-move-windows.extensionUuid
+
         blur-my-shell.extensionUuid
+        burn-my-windows.extensionUuid
+
+        caffeine.extensionUuid
+        clipboard-indicator.extensionUuid
+        coverflow-alt-tab.extensionUuid
+
+        dash-to-panel.extensionUuid
+        desktop-icons-ng-ding.extensionUuid
+
+        extension-list.extensionUuid
+        forge.extensionUuid
         gsconnect.extensionUuid
-        workspaces-indicator-by-open-apps.extensionUuid
-        dash-to-dock.extensionUuid
+        hibernate-status-button.extensionUuid
+
+        ip-finder.extensionUuid
+        just-perfection.extensionUuid
+        lan-ip-address.extensionUuid
+        lock-keys.extensionUuid
+        logo-menu.extensionUuid
+
+        media-controls.extensionUuid
+        open-bar.extensionUuid
+        places-status-indicator.extensionUuid
+        removable-drive-menu.extensionUuid
+
+        settingscenter.extensionUuid
+        tweaks-in-system-menu.extensionUuid
+        user-themes.extensionUuid
+        
+        vitals.extensionUuid
+        workspace-indicator.extensionUuid
+
+        applications-menu.extensionUuid
+        native-window-placement.extensionUuid
+
       ];
     };
 
