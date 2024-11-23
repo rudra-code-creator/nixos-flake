@@ -1,7 +1,7 @@
 {
-  config,
+  # config,
   pkgs,
-  callPackage,
+  # callPackage,
   ...
 }:
 

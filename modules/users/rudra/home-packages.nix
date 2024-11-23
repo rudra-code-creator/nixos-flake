@@ -1,4 +1,9 @@
-{ config, pkgs, ... }:
+{
+  # config,
+  pkgs,
+  # lib,
+  ...
+}:
 
 {
   # Packages that should be installed to the user profile.
@@ -116,9 +121,9 @@
     slskd
 
     # Messaging
-    #discord
-    #telegram-desktop
-    #element-desktop
+    discord
+    telegram-desktop
+    element-desktop
 
     # Jellyfin Programs
     #jellyfin

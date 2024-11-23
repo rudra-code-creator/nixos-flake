@@ -1,5 +1,10 @@
 # users.nix
-{ config, pkgs, ... }:
+{
+  # config,
+  pkgs,
+  # lib,
+  ...
+}:
 
 {
 
