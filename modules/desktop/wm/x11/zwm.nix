@@ -1,7 +1,12 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 let
-  zwm = pkgs.callPackage /home/ctech/.config/zwm/default.nix {};
+  zwm = pkgs.callPackage /home/ctech/.config/zwm/default.nix { };
 in
 {
   options.services.zwm = {

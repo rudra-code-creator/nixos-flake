@@ -3,13 +3,12 @@
 {
 
   imports = [
-  ./bashrc.nix
-     #...other imports
-];
+    ./bashrc.nix
+    #...other imports
+  ];
 
   home.username = "rudratwo";
   home.homeDirectory = "/home/rudratwo";
-
 
   # Set environment variables
   home.sessionVariables = {
@@ -20,16 +19,15 @@
   # Set cursor size and dpi for 4k monitor
   xresources.properties = {
     "Xcursor.size" = 22;
-   # "Xft.dpi" = 172;
+    # "Xft.dpi" = 172;
   };
 
   # Packages for the rudratwo user
-  home.packages = with pkgs; [ 
-    
+  home.packages = with pkgs; [
+
     brave
     #more here
-    
-    
+
   ];
 
   # Example of how to configure a program (uncomment and modify as needed)

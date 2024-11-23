@@ -4,7 +4,7 @@
   services.xserver = {
     xkb.layout = "us";
     xkb.variant = "";
-    xkb.options = "caps:hyper";  # This line remaps Caps Lock to Hyper
+    xkb.options = "caps:hyper"; # This line remaps Caps Lock to Hyper
 
     displayManager.sessionCommands = ''
       # Debug log

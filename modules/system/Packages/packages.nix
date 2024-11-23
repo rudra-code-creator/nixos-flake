@@ -1,5 +1,6 @@
 # New module for SYSTEM-WIDE packages and allowUnfree
-{ config, pkgs, ... }: {
+{ config, pkgs, ... }:
+{
   nixpkgs.config.allowUnfree = true;
   # nixpkgs.config.allowUnsupportedSystem = true;
   environment.systemPackages = with pkgs; [
@@ -24,7 +25,7 @@
     nixpkgs-fmt # ugly AF but current official style for nixpkgs
     alejandra # fast and reliable, readable style
 
-    nixd #NIX LSP
+    nixd # NIX LSP
 
     fish
     nushell
@@ -91,7 +92,7 @@
     xorg.xinit
 
     # xdm build
-    jdk 
+    jdk
     maven
   ];
 }

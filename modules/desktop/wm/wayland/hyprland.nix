@@ -1,4 +1,5 @@
-{ config, pkgs, ... }:{
+{ config, pkgs, ... }:
+{
 
   programs.hyprland = {
     enable = true;
@@ -27,8 +28,8 @@
     hyprpaper
     hyprpicker
     hyprlock
-    nwg-displays #wayland monitors
-    nwg-look #wayland themes
+    nwg-displays # wayland monitors
+    nwg-look # wayland themes
     rofi-wayland
     waybar
     wlr-randr

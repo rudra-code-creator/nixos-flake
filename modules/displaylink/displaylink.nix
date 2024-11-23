@@ -1,4 +1,9 @@
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 let
   # Use the full path to the directory containing the displaylink.nix file
@@ -10,9 +15,11 @@ let
     echo "$new_hash"
   '';
 
-  newHash = builtins.readFile (pkgs.runCommand "new-displaylink-hash" {} ''
-    ${updateDisplayLinkHash} > $out
-  '');
+  newHash = builtins.readFile (
+    pkgs.runCommand "new-displaylink-hash" { } ''
+      ${updateDisplayLinkHash} > $out
+    ''
+  );
 
 in
 {
@@ -23,7 +30,10 @@ in
   };
 
   # Add any other DisplayLink-related configuration here
-  services.xserver.videoDrivers = [ "displaylink" "modesetting" ];
+  services.xserver.videoDrivers = [
+    "displaylink"
+    "modesetting"
+  ];
 
   # If you have any other DisplayLink-specific settings, add them here
   # For example:

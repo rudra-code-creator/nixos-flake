@@ -3,7 +3,7 @@
 {
   services = {
     customCups.enable = true; # Enable CUPS to print documents defined in cups.nix.
-    libinput.enable = true;  # Enable touchpad support
+    libinput.enable = true; # Enable touchpad support
     tailscale = {
       enable = true;
       useRoutingFeatures = "both";

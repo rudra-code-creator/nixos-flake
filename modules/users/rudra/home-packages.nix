@@ -5,7 +5,7 @@
   home.packages = with pkgs; [
 
     # Testing
-    kmonad #keybaord
+    kmonad # keybaord
 
     # Web Browsers:
     brave
@@ -13,7 +13,6 @@
     microsoft-edge
     opera
     vivaldi
-
 
     # File Managers & Addons:
     xfce.catfish
@@ -41,7 +40,7 @@
     eyedropper
     piper-tts
     scrcpy # Screen Record
-    tree # directory structure hierarchies 
+    tree # directory structure hierarchies
     #joplin-desktop # Notes
     bazecor
     github-desktop
@@ -67,7 +66,7 @@
     # Editing:
     audacity
     gimp-with-plugins
-    obs-studio 
+    obs-studio
 
     # Virtual:
     distrobox
@@ -78,7 +77,7 @@
     # cava
     cmatrix
     fastfetch
-    figlet #ASVII Generator
+    figlet # ASVII Generator
     glava
     glow
     neofetch
@@ -86,16 +85,16 @@
     # Other
     #ferdium
     gparted
-    gthumb #Pic Viewer
+    gthumb # Pic Viewer
     gtk4
     jumpapp
     localsend
     lsof
     megacmd
-    playerctl 
+    playerctl
     polybarFull
-    protonvpn-gui      
-    scrot #Screenshot
+    protonvpn-gui
+    scrot # Screenshot
     starship
     syncthing
     tmux
@@ -105,7 +104,7 @@
     xdotool
     xvfb-run
     yt-dlp
-    zenity #Prompt for new Files
+    zenity # Prompt for new Files
 
     # fonts
     font-awesome

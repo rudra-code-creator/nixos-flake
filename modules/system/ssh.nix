@@ -1,21 +1,32 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
   # Server-side SSH configuration
   services.openssh = {
     enable = true;
-    
+
     settings = {
       PasswordAuthentication = false;
       PermitRootLogin = "no";
       # Enable SFTP subsystem
       Subsystem = "sftp internal-sftp";
     };
-    
+
     # Consider changing this if you need SSH access from other machines
     listenAddresses = [
-      { addr = "127.0.0.1"; port = 22; }
-      { addr = "::1"; port = 22; }
+      {
+        addr = "127.0.0.1";
+        port = 22;
+      }
+      {
+        addr = "::1";
+        port = 22;
+      }
     ];
   };
 
@@ -54,6 +65,6 @@
   services.xserver.enable = true;
 
   # Allow users in the "fuse" group to use FUSE
-  users.groups.fuse = {};
+  users.groups.fuse = { };
   users.users.rudra.extraGroups = [ "fuse" ];
 }

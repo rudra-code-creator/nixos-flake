@@ -1,4 +1,9 @@
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
   imports = [
@@ -28,7 +33,6 @@
 
     settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
   };
-  
 
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
@@ -51,7 +55,6 @@
     ".config/ghostty".source = ./dotfiles-rudra/ghostty;
   };
 
-
   # link all files in `./scripts` to `~/.config/i3/scripts`
   # home.file.".config/i3/scripts" = {
   #   source = ./scripts;
@@ -63,7 +66,7 @@
   # home.file.".xxx".text = ''
   #     xxx
   # '';
-  
+
   # Set environment variables
   home.sessionVariables = {
     EDITOR = "micro";
@@ -93,9 +96,9 @@
     config = {
       theme = "github";
       italic-text = "always";
-    };    
+    };
   };
-  
+
   programs.git = {
     enable = true;
     userName = "rudra-code-creator";

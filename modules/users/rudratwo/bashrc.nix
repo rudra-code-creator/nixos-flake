@@ -4,22 +4,21 @@
   programs.bash = {
     enable = true;
     shellAliases = {
-      
-       # Nixos commands
+
+      # Nixos commands
       rebuild = "sudo nixos-rebuild switch";
       cdmodules = "cd $HOME/nixos-config/modules";
       cdnix = "cd $HOME/nixos-config";
       config = "micro $HOME/nixos-config/configuration.nix";
       nixgarbage = "sudo nix-store --gc";
 
-
-           # APP LAUNCH
+      # APP LAUNCH
       timeshift = "sudo timeshift-gtk";
       gparted = "sudo gparted";
       vmm = "virt-manager";
       gufw = "sudo gufw";
       ufw = "sudo ufw";
-      
+
       # FILE LOCATIONS
       dow = "cd $HOME/Downloads";
       hom = "cd ~/";
@@ -45,7 +44,7 @@
       source = "source ~/.bashrc";
       SOURCE = "source ~/.bashrc";
       trash = "trash-empty";
-      w = "wget";  
+      w = "wget";
       ireload = "i3-msg reload";
       sreload = "swaymsg reload";
       scr = "bash $HOME/.scripts/scrcp.sh";
@@ -92,4 +91,4 @@
       export NIX_LD=$(cat $(nix eval --raw nixpkgs#stdenv.cc)/nix-support/dynamic-linker)
     '';
   };
-}  
+}

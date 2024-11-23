@@ -1,4 +1,9 @@
-{ config, pkgs, callPackage, ... }: 
+{
+  config,
+  pkgs,
+  callPackage,
+  ...
+}:
 
 {
   environment.pathsToLink = [ "/libexec" ];
