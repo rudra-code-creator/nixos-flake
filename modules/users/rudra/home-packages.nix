@@ -13,7 +13,7 @@
     kmonad # keybaord
 
     sassc
-    murrine-engine
+    gtk-engine-murrine
     gnome-themes-extra
 
     # Web Browsers:
