@@ -65,7 +65,7 @@
                 ];
 
                 nix = let
-                  users = ["root" config.user.name];
+                  users = ["root" "rudra"];
                 in {
                   settings =
                     {
