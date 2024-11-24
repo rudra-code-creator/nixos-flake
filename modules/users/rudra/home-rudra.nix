@@ -114,7 +114,7 @@
   home.file = {
 
     ".icons/bibata".source = "${pkgs.bibata-cursors}/share/icons/Bibata-Modern-Classic";
-    "Wallpapers".source = "../../../../Wallpapers";
+    "Wallpapers".source = ./Wallpapers;
 
     ".zshrc".source = ./dotfiles-rudra/zshrc/.zshrc;
     # ".config/wezterm".source = ./dotfiles-rudra/wezterm;
