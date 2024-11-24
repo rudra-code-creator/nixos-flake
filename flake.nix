@@ -89,10 +89,11 @@
                   };
                   #for nixD
                   nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
+
                   # flake-utils-plus
-                  generateRegistryFromInputs = true;
-                  generateNixPathFromInputs = true;
-                  linkInputs = true;
+                  # generateRegistryFromInputs = true;
+                  # generateNixPathFromInputs = true;
+                  # linkInputs = true;
                 };
               }
             )
