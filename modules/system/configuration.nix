@@ -80,8 +80,7 @@
       noto-fonts-cjk-serif
       noto-fonts-emoji
       (nerdfonts.override {fonts = ["JetBrainsMono"];})
-    ]
-    ++ cfg.fonts;
+    ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
