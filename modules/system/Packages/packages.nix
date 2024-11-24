@@ -100,6 +100,10 @@
     rsync
     jq
     neovim
+    nitch
+    eza
+    bat
+
 
     # for compiling
     gcc

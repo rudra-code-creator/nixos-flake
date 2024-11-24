@@ -8,7 +8,9 @@
 
 {
 
-  users.defaultUserShell = pkgs.bash;
+  users.defaultUserShell = pkgs.fish;
+
+  users.users.root.shell = pkgs.bash;
 
   users.users = {
     rudra = {

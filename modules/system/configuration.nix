@@ -75,6 +75,8 @@
     shellAliases = {
       ".." = "cd ..";
       neofetch = "nitch";
+      ls = "eza -la --icons --no-user --no-time --git -s type";
+      cat = "bat";
     };
   };
 
