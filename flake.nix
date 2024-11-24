@@ -62,6 +62,13 @@
                   nixfmt-rfc-style
                   nix-index
                   nix-prefetch-git
+                  nix-melt
+
+                  flake-checker # Flake health checker
+                  autoflake #Tool to remove unused imports and unused variables
+                  deploy-rs
+                  fh
+
                 ];
 
                 nix = let

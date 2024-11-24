@@ -92,6 +92,7 @@
 
   #Enable Sudo
   security.sudo.enable = true;
+  security.sudo.wheelNeedsPassword = false;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

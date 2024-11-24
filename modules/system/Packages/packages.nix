@@ -26,6 +26,7 @@
     gnome-extension-manager
 
     licensor
+    snowflake # system to beat internet censorship
 
     # Nix Utils
     nix-index
