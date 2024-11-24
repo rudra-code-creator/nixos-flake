@@ -1,5 +1,10 @@
 # New module for SYSTEM-WIDE packages and allowUnfree
-{ config, pkgs, ... }:
+{
+  # config,
+  pkgs,
+  # lib,
+  ...
+}:
 {
   nixpkgs.config.allowUnfree = true;
   # nixpkgs.config.allowUnsupportedSystem = true;
@@ -19,6 +24,18 @@
     sl
     waynergy
     gnome-extension-manager
+
+    licensor
+
+    # Nix Utils
+    nix-index
+    nix-init
+    nix-melt
+    nix-update
+    nixpkgs-fmt
+    nixpkgs-hammering
+    nixpkgs-review
+    nurl
 
     # NIX CODE FORMATTERS
     nixfmt-rfc-style # my favourite - new official style for nixpkgs
