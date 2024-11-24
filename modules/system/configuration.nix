@@ -71,6 +71,11 @@
       # Enable icons in tooling since we have nerdfonts.
       LOG_ICONS = "true";
     };
+
+    shellAliases = {
+      ".." = "cd ..";
+      neofetch = "nitch";
+    };
   };
 
   fonts.packages = with pkgs;
