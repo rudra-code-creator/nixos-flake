@@ -51,15 +51,15 @@
 
             (
               {
-                config,
+                # config,
                 pkgs,
-                lib,
+                # lib,
                 ...
               }:
               {
                 environment.systemPackages = with pkgs; [
                   nil
-                  nixfmt
+                  nixfmt-rfc-style
                   nix-index
                   nix-prefetch-git
                 ];
