@@ -62,14 +62,26 @@
       NIX_GSETTINGS_OVERRIDES_DIR = lib.mkForce "/nix/store/i7mq1ykcci39lw3k7mrxca062rwapk0f-gnome-gsettings-overrides/share/gsettings-schemas/nixos-gsettings-overrides/glib-2.0/schemas";
     
     };
-    
+
     variables = {
       # Make some programs "XDG" compliant.
       LESSHISTFILE = "$XDG_CACHE_HOME/less.history";
       WGETRC = "$XDG_CONFIG_HOME/wgetrc";
       XDG_TERMINAL = "alacritty";
+      # Enable icons in tooling since we have nerdfonts.
+      LOG_ICONS = "true";
     };
   };
+
+  fonts.packages = with pkgs;
+    [
+      noto-fonts
+      noto-fonts-cjk-sans
+      noto-fonts-cjk-serif
+      noto-fonts-emoji
+      (nerdfonts.override {fonts = ["JetBrainsMono"];})
+    ]
+    ++ cfg.fonts;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

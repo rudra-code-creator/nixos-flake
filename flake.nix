@@ -51,18 +51,49 @@
 
             (
               {
-                # config,
-                # pkgs,
-                # lib,
+                config,
+                pkgs,
+                lib,
                 ...
               }:
               {
-                nix.settings.experimental-features = [
-                  "nix-command"
-                  "flakes"
+                environment.systemPackages = with pkgs; [
+                  nil
+                  nixfmt
+                  nix-index
+                  nix-prefetch-git
                 ];
-                #for nixD
-                nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
+
+                nix = let
+                  users = ["root" config.user.name];
+                in {
+                  settings =
+                    {
+                      experimental-features = "nix-command flakes";
+                      http-connections = 50;
+                      warn-dirty = false;
+                      log-lines = 50;
+                      sandbox = "relaxed";
+                      auto-optimise-store = true;
+                      trusted-users = users;
+                      allowed-users = users;
+                    }
+                    // (lib.optionalAttrs config.apps.tools.direnv.enable {
+                      keep-outputs = true;
+                      keep-derivations = true;
+                    });
+                  gc = {
+                    automatic = true;
+                    dates = "weekly";
+                    options = "--delete-older-than 7d";
+                  };
+                  #for nixD
+                  nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
+                  # flake-utils-plus
+                  generateRegistryFromInputs = true;
+                  generateNixPathFromInputs = true;
+                  linkInputs = true;
+                };
               }
             )
           ];
