@@ -35,8 +35,7 @@
     enable = true;
   };
 
-  #which GLIB schema to use
-  environment.sessionVariables.NIX_GSETTINGS_OVERRIDES_DIR = lib.mkForce "/nix/store/i7mq1ykcci39lw3k7mrxca062rwapk0f-gnome-gsettings-overrides/share/gsettings-schemas/nixos-gsettings-overrides/glib-2.0/schemas";
+  
 
   # Define your hostname.
   networking.hostName = "nixos";
@@ -50,9 +49,26 @@
   # Enable UID and GUID change
   users.mutableUsers = true;
 
-  # Set terminator as the default terminal
-  environment.variables = {
-    XDG_TERMINAL = "alacritty";
+  environment = {
+    sessionVariables = {
+
+      XDG_CACHE_HOME = "$HOME/.cache";
+      XDG_CONFIG_HOME = "$HOME/.config";
+      XDG_DATA_HOME = "$HOME/.local/share";
+      XDG_BIN_HOME = "$HOME/.local/bin";
+      XDG_DESKTOP_DIR = "$HOME/Desktop";
+
+      #which GLIB schema to use
+      NIX_GSETTINGS_OVERRIDES_DIR = lib.mkForce "/nix/store/i7mq1ykcci39lw3k7mrxca062rwapk0f-gnome-gsettings-overrides/share/gsettings-schemas/nixos-gsettings-overrides/glib-2.0/schemas";
+    
+    };
+    
+    variables = {
+      # Make some programs "XDG" compliant.
+      LESSHISTFILE = "$XDG_CACHE_HOME/less.history";
+      WGETRC = "$XDG_CONFIG_HOME/wgetrc";
+      XDG_TERMINAL = "alacritty";
+    };
   };
 
   # Some programs need SUID wrappers, can be configured further or are
