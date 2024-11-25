@@ -66,6 +66,49 @@
     neovim
     #neovim-unwrapped
     vscodium # Text Editor
+    ghz # gRPC benchmarking and load testing
+    ghc # Glasgow Haskell compiler
+    # ghdl # VHDL 2008/93/87 simulator
+    ghdl-llvm # VHDL 2008/93/87 simulator
+    ghcid # GHCi based bare bones IDE
+    ghciwatch # Ghci-based file watching recompiler for Haskell development
+    gh-ost # Triggerless online schema migration solution for MySQL
+    ghosttohugo
+    ghostscript
+
+    #HACKING
+    ghunt
+    ghost
+    ghostunnel
+    ghidra
+    ghauri
+
+    #github
+    gh
+    ghr
+    ghq
+    ghorg
+    gh-s
+    gh-f
+    gh-poi
+    gh2md
+    gh-eco
+    gh-cal
+    ghfetch
+    gh-dash
+    gh-notify
+    gh-copilot
+    gh-screensaver
+    gh-actions-cache
+    gh-markdown-preview
+
+    ghp-import
+    ghdorker
+    ghrepo-stats
+
+
+    ghostie # Github notifications
+
 
     #shell
     zoxide
