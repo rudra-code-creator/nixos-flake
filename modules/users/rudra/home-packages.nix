@@ -41,6 +41,7 @@
     tmux
     zellij
     cowsay
+    fortune
 
     # Productivity:
     autokey
