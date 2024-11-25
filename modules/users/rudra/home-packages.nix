@@ -40,6 +40,7 @@
     wezterm
     tmux
     zellij
+    cowsay
 
     # Productivity:
     autokey
