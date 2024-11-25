@@ -266,6 +266,36 @@
     };
   };
 
+  programs.fzf = {
+    enable = true;
+    package = pkgs.fzf;
+    enableBashIntegration = true;
+    enableZshIntegration = true;
+    enableFishIntegration = true;
+    defaultOptions = [
+      "--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8"
+      "--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc"
+      "--color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
+      "--color=selected-bg:#45475a"
+      "--multi"
+    ];
+    
+    tmux.enableShellIntegration = true;
+    tmux.shellIntegrationOptions = [ "-d 40%" ];
+
+  };
+
+  programs.mcfly = {
+    enable = true;
+    enableBashIntegration = true;
+    enableZshIntegration = true;
+    enableFishIntegration = true;
+    fuzzySearchFactor = 4;
+    fzf.enable = true;
+    interfaceView = "TOP";
+    keyScheme = "vim";
+  };
+
   programs.bash.enable = true;
   programs.zsh.enable = true;
   programs.fish.enable = true;
