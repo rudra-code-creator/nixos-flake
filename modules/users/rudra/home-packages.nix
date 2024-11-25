@@ -51,15 +51,15 @@
     piper-tts
     scrcpy # Screen Record
     tree # directory structure hierarchies
-    #joplin-desktop # Notes
+    joplin-desktop # Notes
     bazecor
     github-desktop
     waynergy
 
     # Self Hosting:
     docker-compose
-    #cloudflared
-    #rustdesk-flutter
+    cloudflared
+    rustdesk-flutter
 
     # Programming:
     android-tools
@@ -91,9 +91,10 @@
     glava
     glow
     neofetch
+    hello
 
     # Other
-    #ferdium
+    ferdium
     gparted
     gthumb # Pic Viewer
     gtk4
