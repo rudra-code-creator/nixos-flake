@@ -89,27 +89,13 @@
     ghr
     ghq
     ghorg
-    gh-s
-    gh-f
     gh-poi
     gh2md
-    gh-eco
-    gh-cal
     ghfetch
-    gh-dash
-    gh-notify
-    gh-copilot
-    gh-screensaver
-    gh-actions-cache
-    gh-markdown-preview
-
     ghp-import
     ghdorker
     ghrepo-stats
-
-
     ghostie # Github notifications
-
 
     #shell
     zoxide

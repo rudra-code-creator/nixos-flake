@@ -123,7 +123,7 @@
     ".config/starship".source = ./dotfiles-rudra/starship;
     ".config/zellij".source = ./dotfiles-rudra/zellij;
     ".config/nvim".source = ./dotfiles-rudra/nvim;
-    ".config/gh".source = ./dotfiles-rudra/gh;
+    # ".config/gh".source = ./dotfiles-rudra/gh;
 
     # ".config/nushell/config.nu".source = ./dotfiles-rudra/nushell/config.nu;
     # ".config/nushell/env.nu".source = ./dotfiles-rudra/nushell/env.nu;
@@ -240,6 +240,30 @@
     enable = true;
     userName = "rudra-code-creator";
     userEmail = "rudrakeshwani2@gmail.com";
+  };
+
+  programs.gh = {
+    enable = true;
+    settings = {
+      version = "1";
+      aliases = {
+        "as" = "auth status";
+        "al" = "auth login";
+      };
+      gitCredentialHelper.enable = true;
+      extensions = with pkgs; [
+        gh-dash
+        gh-notify
+        gh-copilot
+        gh-screensaver
+        gh-actions-cache
+        gh-markdown-preview
+        gh-eco
+        gh-cal
+        gh-s
+        gh-f
+      ];
+    };
   };
 
   programs.bash.enable = true;
