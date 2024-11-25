@@ -197,7 +197,7 @@
     # When looking at the manual page pretend that all references to
     # NixOS stuff are actually references to Home Manager stuff.
     # Thanks!
-    manpages.enable = true;
+    # manpages.enable = true;
   };
 
   programs.man = {
