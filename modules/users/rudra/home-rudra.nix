@@ -123,6 +123,7 @@
     ".config/starship".source = ./dotfiles-rudra/starship;
     ".config/zellij".source = ./dotfiles-rudra/zellij;
     ".config/nvim".source = ./dotfiles-rudra/nvim;
+    ".config/gh".source = ./dotfiles-rudra/gh;
 
     # ".config/nushell/config.nu".source = ./dotfiles-rudra/nushell/config.nu;
     # ".config/nushell/env.nu".source = ./dotfiles-rudra/nushell/env.nu;
