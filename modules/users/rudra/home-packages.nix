@@ -7,6 +7,7 @@
 
 {
   # Packages that should be installed to the user profile.
+  # sldsflld
   home.packages = with pkgs; [
 
     # Testing
