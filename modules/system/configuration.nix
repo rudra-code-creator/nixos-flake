@@ -24,6 +24,7 @@
     ../users/users.nix
     ./virtualization.nix
     ./xdomap.nix
+    ./android.nix
 
     #PACKAGES
     ./Packages/packages.nix

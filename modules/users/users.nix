@@ -26,6 +26,7 @@
         "lp"
         "libvirtd"
         "docker"
+        "adbusers"
       ];
       uid = 1000; # It's good practice to explicitly set the UID
       initialPassword = "abcde12345"; # Plain text password for testing BE SURE TO CHANGE IT

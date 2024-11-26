@@ -285,6 +285,8 @@
 
   };
 
+  programs.jq.enable = true;
+
   programs.mcfly = {
     enable = true;
     enableBashIntegration = true;
