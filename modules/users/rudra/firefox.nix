@@ -10,7 +10,6 @@
     enable = true;
 
     profiles.default = {
-      name = "default";
       isDefault = true;
 
       bookmarks = { };
