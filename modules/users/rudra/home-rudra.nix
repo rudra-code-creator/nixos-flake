@@ -10,6 +10,7 @@
     ../rudra/home-packages.nix
     ../rudra/nushell.nix
     ../rudra/rust.nix
+    ../firefox.nix
 
   ];
 
