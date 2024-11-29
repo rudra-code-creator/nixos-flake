@@ -37,6 +37,8 @@
     nixpkgs-hammering
     nixpkgs-review
     nurl
+    nil # Nix LSP
+    tokei
 
     # NIX CODE FORMATTERS
     nixfmt-rfc-style # my favourite - new official style for nixpkgs

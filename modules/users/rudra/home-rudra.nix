@@ -9,7 +9,7 @@
   imports = [
     ../rudra/home-packages.nix
     ../rudra/nushell.nix
-    # ../rudra/theming.nix
+    ../rudra/rust.nix
 
   ];
 
@@ -302,6 +302,11 @@
   };
 
   programs.jq.enable = true;
+
+  services.deluge = {
+    enable = true;
+    declarative = true;
+  };
 
   programs.mcfly = {
     enable = true;
