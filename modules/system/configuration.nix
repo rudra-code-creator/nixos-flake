@@ -2,7 +2,7 @@
 # configuration.nix(5) man page and in the NixOS manual (accessible by running ‘nixos-help’).
 
 {
-  # config,
+  config,
   pkgs,
   lib,
   ...
@@ -88,7 +88,20 @@
       noto-fonts-cjk-serif
       noto-fonts-emoji
       (nerdfonts.override {fonts = ["JetBrainsMono"];})
+
+      dejavu_fonts
+      fira
+      fira-code
+      iosevka
     ];
+
+  fonts.fontconfig = {
+    defaultFonts.monospace = [ config.fonts.monospace ];
+    hinting.enable = false;
+    subpixel.lcdfilter = "light"; # fix for status bar characters
+  };
+
+  fonts.monospace = "JetBrainsMono";
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -99,6 +112,7 @@
   };
 
   #Enable Sudo
+  
   security.sudo.enable = true;
   security.sudo.wheelNeedsPassword = false;
 
