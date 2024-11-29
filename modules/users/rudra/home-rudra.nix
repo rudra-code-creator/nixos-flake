@@ -303,11 +303,6 @@
 
   programs.jq.enable = true;
 
-  services.deluge = {
-    enable = true;
-    declarative = true;
-  };
-
   programs.mcfly = {
     enable = true;
     enableBashIntegration = true;
