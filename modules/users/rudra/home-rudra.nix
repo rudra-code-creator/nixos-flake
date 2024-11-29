@@ -285,29 +285,19 @@
 
   };
 
-  programs.alacritty = {
+  programs.bottom = {
+    package = pkgs.bottom;
     enable = true;
-    settings = {
-      cursor.style = {
-        shape = "Block";
-      };
 
-      colors = {
-        primary = {
-          background = config.theme.bg;
-          foreground = config.theme.fg;
-        };
+    settings.flags = {
+      battery = true;
+      regex = true;
+      avg_cpu = true;
+      temperature_type = "c";
+    };
 
-        normal = with config.theme; {
-          inherit black red green yellow blue magenta cyan white;
-        };
-
-        bright = with config.theme.bright; {
-          inherit black red green yellow blue magenta cyan white;
-        };
-      };
-
-      # window.opacity = 0.9;
+    settings.colors = {
+      low_battery_color = "red";
     };
   };
 
