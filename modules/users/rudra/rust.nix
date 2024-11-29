@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    cargo
+    # cargo
     clang
     clippy
     mold
