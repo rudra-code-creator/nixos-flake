@@ -2,14 +2,14 @@
 
 {
   home.packages = with pkgs; [
-    # cargo
+    cargo
     clang
     clippy
     mold
     rust-analyzer
     rustc
     rustfmt
-    rustup
+    # rustup
     vscode-extensions.llvm-org.lldb-vscode # for hx
   ];
 
