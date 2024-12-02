@@ -71,7 +71,7 @@
     #neovim-unwrapped
 
 
-    vscodium # Text Editor
+    # vscodium # Text Editor
     vscode
     vscode-runner
     vscode-js-debug
