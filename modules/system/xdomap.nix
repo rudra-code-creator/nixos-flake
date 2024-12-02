@@ -1,4 +1,9 @@
-{ config, pkgs, ... }:
+{
+  # config,
+  pkgs,
+  # lib,
+  ...
+}:
 
 {
   services.xserver = {
@@ -7,7 +12,7 @@
     xkb.options = "caps:hyper"; # This line remaps Caps Lock to Hyper
     enable = true;
 
-    displayManager.defaultSession = "gnome-xorg";
+    
 
     displayManager.sessionCommands = ''
       # Debug log
@@ -34,4 +39,6 @@
       # Any other existing sessionCommands...
     '';
   };
+
+  services.displayManager.defaultSession = "gnome-xorg";
 }
