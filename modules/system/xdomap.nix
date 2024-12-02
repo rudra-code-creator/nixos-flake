@@ -7,11 +7,7 @@
     xkb.options = "caps:hyper"; # This line remaps Caps Lock to Hyper
     enable = true;
 
-    displayManager.lightdm = {
-      enable = true;
-      greeters.default = "lightdm-gtk-greeter";
-      autoLogin.pamLastSession = true;
-    };
+    services.displayManager.defaultSession = "";
 
     displayManager.sessionCommands = ''
       # Debug log
