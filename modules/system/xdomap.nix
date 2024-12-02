@@ -7,7 +7,7 @@
     xkb.options = "caps:hyper"; # This line remaps Caps Lock to Hyper
     enable = true;
 
-    displayManager.defaultSession = "";
+    displayManager.defaultSession = "gnome-xorg";
 
     displayManager.sessionCommands = ''
       # Debug log
