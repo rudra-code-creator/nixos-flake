@@ -83,7 +83,7 @@
     pamixer
     pavucontrol
 
-    # Trackpad 
+    # Trackpad
     libinput
     libinput-gestures
     libnotify
@@ -118,5 +118,38 @@
     # xdm build
     jdk
     maven
+
+    #KUBERNETES and kubectl, helm, minikube
+    kubernix
+    kubergrunt
+
+    kubernetes
+    kubernetes-code-generator
+    kubernetes-controller-tools
+    kubernetes-helm
+    kubernetes-helm-wrapped
+    kubernetes-helmPlugins
+    kubernetes-metrics-server
+    kubernetes-polaris
+
+    kubectl
+    kubectl-cnpg
+    kubectl-convert
+    kubectl-df-pv
+    kubectl-doctor
+    kubectl-evict-pod
+    kubectl-example
+    kubectl-explore
+    kubectl-gadget
+    kubectl-graph
+    kubectl-images
+    kubectl-klock
+    kubectl-ktop
+    kubectl-neat
+    kubectl-node-shell
+    kubectl-tree
+    kubectl-validate
+    kubectl-view-allocations
+    kubectl-view-secret
   ];
 }
