@@ -66,8 +66,21 @@
     # Programming:
     android-tools
     neovim
+    dockerfile-language-server-nodejs
+    melos #A tool for managing Dart projects with multiple packages. With IntelliJ and Vscode IDE support. Supports automated versioning, changelogs & publishing via Conventional Commits.
     #neovim-unwrapped
+
+
     vscodium # Text Editor
+    vscode
+    vscode-runner
+    vscode-js-debug
+    vscode-langservers-extracted
+    code-cursor
+    openvscode-server
+
+
+
     ghz # gRPC benchmarking and load testing
     ghc # Glasgow Haskell compiler
     # ghdl # VHDL 2008/93/87 simulator
