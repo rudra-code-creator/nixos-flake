@@ -17,7 +17,7 @@ in
     enable = true;
 
     desktopManager = {
-      xterm.enable = false;
+      xterm.enable = true;
     };
 
     displayManager = {
@@ -78,7 +78,6 @@ in
   };
 
   # Move the defaultSession setting here
-  services.displayManager.defaultSession = "none+i3";
 
   xdg.portal = {
     enable = true;
