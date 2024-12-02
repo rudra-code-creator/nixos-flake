@@ -11,7 +11,7 @@
     enable = true;
 
     settings = {
-      PasswordAuthentication = false;
+      PasswordAuthentication = true;
       PermitRootLogin = "no";
       # Enable SFTP subsystem
       Subsystem = "sftp internal-sftp";
