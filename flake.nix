@@ -15,16 +15,18 @@
   };
 
   outputs =
-    inputs@{
+    {
       self,
       nixpkgs,
       home-manager,
       nix-colors,
       ...
-    }:
+    }@inputs:
     {
       nixosConfigurations = {
         nixos = nixpkgs.lib.nixosSystem {
+
+          specialArgs = { inherit inputs; };
           system = "x86_64-linux";
 
           modules = [
@@ -44,6 +46,7 @@
             # Home Manager
             home-manager.nixosModules.home-manager
             {
+              extraSpecialArgs = { inherit inputs; };
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.backupFileExtension = "backup";
