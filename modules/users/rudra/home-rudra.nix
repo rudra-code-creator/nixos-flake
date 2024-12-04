@@ -1,7 +1,7 @@
 {
   config,
   pkgs,
-  # inputs,
+  inputs,
   ...
 }:
 
@@ -11,10 +11,10 @@
     ../rudra/nushell.nix
     ../rudra/rust.nix
     # ../firefox.nix
+    inputs.nix-colors.homeManagerModules.default
 
   ];
 
-  # TODO please change the username & home directory to your own
   home.username = "rudra";
   home.homeDirectory = "/home/rudra";
 
@@ -59,7 +59,7 @@
         settingscenter.extensionUuid
         tweaks-in-system-menu.extensionUuid
         user-themes.extensionUuid
-        
+
         vitals.extensionUuid
         workspace-indicator.extensionUuid
 
@@ -235,7 +235,7 @@
     }) + "/plugins";
   };
 
-  
+
 
   programs.git = {
     enable = true;
@@ -280,7 +280,7 @@
       "--color=selected-bg:#45475a"
       "--multi"
     ];
-    
+
     tmux.enableShellIntegration = true;
     tmux.shellIntegrationOptions = [ "-d 40%" ];
 
