@@ -46,7 +46,7 @@
             # Home Manager
             home-manager.nixosModules.home-manager
             {
-              extraSpecialArgs = { inherit inputs; };
+              # extraSpecialArgs = { inherit inputs; };
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.backupFileExtension = "backup";
