@@ -128,7 +128,7 @@
     kubernetes-controller-tools
     kubernetes-helm
     kubernetes-helm-wrapped
-    kubernetes-helmPlugins
+    # kubernetes-helmPlugins
     kubernetes-metrics-server
     kubernetes-polaris
 
