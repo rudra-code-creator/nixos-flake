@@ -1,5 +1,5 @@
-{ 
-  # config, 
+{
+  # config,
   # pkgs,
   ...
 }:
@@ -27,6 +27,5 @@
   # XFCE desktop manager (for Thunar preferences)
   services.xserver.desktopManager.xfce = {
     enable = true;
-    noDesktop = true;
   };
 }
